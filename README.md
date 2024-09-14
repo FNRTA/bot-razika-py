@@ -51,9 +51,19 @@ This Discord bot allows users to play music from YouTube in voice channels. It s
 
 ## Heroku deployment
 
-1. Create Heroku app with the name ` discord-bot-razika-py`
-2. Install ffmpeg: heroku buildpack:add --app discord-bot-razika-py https://github.com/heroku/heroku-buildpack-ffmpeg
-
+1. Create Heroku app with the name `discord-bot-razika-py`
+2. Login in Heroku cli: 
+```
+heroku login
+```
+3. Install ffmpeg:
+```
+heroku buildpacks:add --index 1 https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
+```
+4. Deploy
+```
+git push heroku main
+```
 
 ## Development
 

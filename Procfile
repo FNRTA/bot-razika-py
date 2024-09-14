@@ -1,1 +1,1 @@
-web: gunicorn discord-bot-razika-py:app
+web: python bot.py
