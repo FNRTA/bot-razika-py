@@ -3,4 +3,3 @@ yt_dlp
 asyncio
 discord
 dotenv
-discord
