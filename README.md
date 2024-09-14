@@ -43,10 +43,17 @@ This Discord bot allows users to play music from YouTube in voice channels. It s
 
 2. In Discord, use the following commands:
    - `!p <YouTube URL>`: Play a song or add it to the queue
+   - `!pl <song name>`: Will search YouTube a play the first video
    - `!q`: Display the current queue
    - `!s`: Skip the current song
    - `!d <Song number in queue>`: Deletes the song from the queue
    - `!l`: Make the bot leave the voice channel
+
+## Heroku deployment
+
+1. Create Heroku app with the name ` discord-bot-razika-py`
+2. Install ffmpeg: heroku buildpack:add --app discord-bot-razika-py https://github.com/heroku/heroku-buildpack-ffmpeg
+
 
 ## Development
 
@@ -74,3 +81,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 If you encounter any problems, please file an issue along with a detailed description.
+
+
